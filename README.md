@@ -18,3 +18,10 @@ The task is to check whether cycle exists in the directed graph. If cycle exists
 
 ###1004
 This is a basic Dynamic Programming problem. The tricky part is to write the loops. While calculating the maximum bananas the second inner loop will run forward till i < n and for the remaining it would run backward. Check the solution for understanding the logic behind this. 
+
+###1005
+Not yet solved 
+
+###1006
+This question is quite simple and straight forward as compared to the previous questions. All you need to dos is to replace the recursion with a for loop. Also make sure to take the modulo before storing the values in array as the values can be quite large
+
