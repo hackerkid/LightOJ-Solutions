@@ -1,6 +1,6 @@
 #Solutions For Light OJ
 
-##Use the hints for solving the problem. See the solutions only in worst case situations. 
+Use the hints for solving the problem. See the solutions only in worst case situations. 
 
 ###1002 
 You need to use a modification of Dijkstra's algorithm for solving thr peorblem. They key catch is in Dijkstra we use 
