@@ -28,5 +28,5 @@ This question is quite simple and straight forward as compared to the previous q
 ###1007 - Mathematically Hard
 You should take exereme care while solving this problem. The input require very first IO method. Scanf and Printf would be the best choice if you are using C++. You can need to use a modified version of the Sieve method for cracking the problem. The approach I used was to first store the prime numbers using the sieve method and then to use a sieve like method to calculate `phi of n`. Take extra care to use `llu` while printing out the answer as the output is in the range of unsigned long long.
 
-#1008 - Fibsieve`s Fantabulous Birthday 
+###1008 - Fibsieve`s Fantabulous Birthday 
 Try to find the pattern in which the numbers are appearing. If you look carefully you can obtain the pattern and device an formula to find the coordinates. 
