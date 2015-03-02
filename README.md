@@ -30,3 +30,6 @@ You should take exereme care while solving this problem. The input require very 
 
 ###1008 - Fibsieve`s Fantabulous Birthday 
 Try to find the pattern in which the numbers are appearing. If you look carefully you can obtain the pattern and device an formula to find the coordinates. 
+
+###1009 - Back to Underworld
+I didn't use any normal graph algorithm for solving this problem. Even tough the problem uses a little concept of connected componenents. Try approaching the problem by considering the rivals as nodes in a graph. Check the code if you are stuck for a long time
