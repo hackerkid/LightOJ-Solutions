@@ -19,9 +19,6 @@ The task is to check whether cycle exists in the directed graph. If cycle exists
 ###1004 - Monkey Banana Problem
 This is a basic Dynamic Programming problem. The tricky part is to write the loops. While calculating the maximum bananas the second inner loop will run forward till i < n and for the remaining it would run backward. Check the solution for understanding the logic behind this. 
 
-###1005 - Rooks
-Not yet solved 
-
 ###1006 - Hex-a-bonacci
 This question is quite simple and straight forward as compared to the previous questions. All you need to dos is to replace the recursion with a for loop. Also make sure to take the modulo before storing the values in array as the values can be quite large
 
@@ -33,3 +30,6 @@ Try to find the pattern in which the numbers are appearing. If you look carefull
 
 ###1009 - Back to Underworld
 I didn't use any normal graph algorithm for solving this problem. Even tough the problem uses a little concept of connected componenents. Try approaching the problem by considering the rivals as nodes in a graph. Check the code if you are stuck for a long time
+
+###1011 - Marriage Ceremonies 
+This is a normal Memoization with Bit masking type problem. Normal recursion without memoization causes a TLE. 
