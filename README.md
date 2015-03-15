@@ -33,3 +33,9 @@ I didn't use any normal graph algorithm for solving this problem. Even tough the
 
 ###1011 - Marriage Ceremonies 
 This is a normal Memoization with Bit masking type problem. Normal recursion without memoization causes a TLE. 
+
+###1012 - Guilty Prince
+This is one is a really simple graph problem. Keep marking the visited nodes to avoid visiting them again
+
+###1014 - Ifter Party
+This is also a normal Ad-Hoc problem. The simplified task is to find the divisors of p - l which are greater than l
