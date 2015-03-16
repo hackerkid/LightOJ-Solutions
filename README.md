@@ -38,4 +38,7 @@ This is a normal Memoization with Bit masking type problem. Normal recursion wit
 This is one is a really simple graph problem. Keep marking the visited nodes to avoid visiting them again
 
 ###1014 - Ifter Party
-This is also a normal Ad-Hoc problem. The simplified task is to find the divisors of p - l which are greater than l
+This is also a normal Ad-Hoc problem. The simplified task is to find the divisors of p - l which are greater than l.
+
+###1016 - Brush II
+This is yet another adhoc problem. What you need to do is to ietrate over all the y points in ascending order in such a way that you increase the counter only when the difference of ym, ym+1, ....yn becomes greater than w. The counter would give you the answer. 
