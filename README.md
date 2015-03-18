@@ -42,3 +42,9 @@ This is also a normal Ad-Hoc problem. The simplified task is to find the divisor
 
 ###1016 - Brush II
 This is yet another adhoc problem. What you need to do is to ietrate over all the y points in ascending order in such a way that you increase the counter only when the difference of ym, ym+1, ....yn becomes greater than w. The counter would give you the answer. 
+
+###1019 - Brush IV
+This is a trivial application of Shortest Path algorithms. Implementing Floyd Warshal solution for this can accept the solution in a few lines of code
+
+###1020 - A Childhood game
+This is a problem under Game theory. You can write the solution for this problem by just observing the pattern of win or loss. If Alice is taking the stone first she will get a win for 0, 2, 3, 5 .... and loss for 1, 4, 7 .... You can easily use this observation for solving the problem. 
