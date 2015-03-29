@@ -48,3 +48,12 @@ This is a trivial application of Shortest Path algorithms. Implementing Floyd Wa
 
 ###1020 - A Childhood game
 This is a problem under Game theory. You can write the solution for this problem by just observing the pattern of win or loss. If Alice is taking the stone first she will get a win for 0, 2, 3, 5 .... and loss for 1, 4, 7 .... You can easily use this observation for solving the problem. 
+
+###1022 - Circle in Square
+The only tricky part in this question is to use double for all the calculations. Always use double instead of float in programming contests. 
+
+###1023 - Discovering Permutations
+This is a pretty simple questions. You can use the C++ `next_permutation` for cracking this problem in a few lines of code
+
+###1025
+This is a dp problem
