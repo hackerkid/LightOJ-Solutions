@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>LightOJ Solutions by hackerkid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">LightOJ Solutions</h1>
+      <h2 class="project-tagline">My solutions for LIGHTOJ</h2>
+      <a href="https://github.com/hackerkid/LightOJ-Solutions" class="btn">View on GitHub</a>
+      <a href="https://github.com/hackerkid/LightOJ-Solutions/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/hackerkid/LightOJ-Solutions/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="solutions-for-light-oj" class="anchor" href="#solutions-for-light-oj" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solutions For Light OJ</h1>
+
+<p>Use the hints for solving the problem. See the solutions only in worst case situations. </p>
+
+<h3>
+<a id="1002---country-roads" class="anchor" href="#1002---country-roads" aria-hidden="true"><span class="octicon octicon-link"></span></a>1002 - Country Roads</h3>
+
+<p>You need to use a modification of Dijkstra's algorithm for solving thr peorblem. They key catch is in Dijkstra we use </p>
+
+<p><code>a[i][j] + d[i] &lt; d[j]</code>
+<code>d[j] = a[i][j] + d[i]</code></p>
+
+<p>While here we should use</p>
+
+<p><code>max(a[i][j], d[i]) &lt; d[j]</code>
+<code>d[j] = max(a[i][j], d[i])</code></p>
+
+<h3>
+<a id="1003---drunk" class="anchor" href="#1003---drunk" aria-hidden="true"><span class="octicon octicon-link"></span></a>1003 - Drunk</h3>
+
+<p>The task is to check whether cycle exists in the directed graph. If cycle exists he can't drink all. You can use a hash function or map to convert the drinks to numbers. Once converted use DFS or a suitable algo for checking the existance of cycles. I used <code>DFS</code> for the search of cycles. </p>
+
+<h3>
+<a id="1004---monkey-banana-problem" class="anchor" href="#1004---monkey-banana-problem" aria-hidden="true"><span class="octicon octicon-link"></span></a>1004 - Monkey Banana Problem</h3>
+
+<p>This is a basic Dynamic Programming problem. The tricky part is to write the loops. While calculating the maximum bananas the second inner loop will run forward till i &lt; n and for the remaining it would run backward. Check the solution for understanding the logic behind this. </p>
+
+<h3>
+<a id="1006---hex-a-bonacci" class="anchor" href="#1006---hex-a-bonacci" aria-hidden="true"><span class="octicon octicon-link"></span></a>1006 - Hex-a-bonacci</h3>
+
+<p>This question is quite simple and straight forward as compared to the previous questions. All you need to dos is to replace the recursion with a for loop. Also make sure to take the modulo before storing the values in array as the values can be quite large</p>
+
+<h3>
+<a id="1007---mathematically-hard" class="anchor" href="#1007---mathematically-hard" aria-hidden="true"><span class="octicon octicon-link"></span></a>1007 - Mathematically Hard</h3>
+
+<p>You should take exereme care while solving this problem. The input require very first IO method. Scanf and Printf would be the best choice if you are using C++. You can need to use a modified version of the Sieve method for cracking the problem. The approach I used was to first store the prime numbers using the sieve method and then to use a sieve like method to calculate <code>phi of n</code>. Take extra care to use <code>llu</code> while printing out the answer as the output is in the range of unsigned long long.</p>
+
+<h3>
+<a id="1008---fibsieves-fantabulous-birthday" class="anchor" href="#1008---fibsieves-fantabulous-birthday" aria-hidden="true"><span class="octicon octicon-link"></span></a>1008 - Fibsieve`s Fantabulous Birthday</h3>
+
+<p>Try to find the pattern in which the numbers are appearing. If you look carefully you can obtain the pattern and device an formula to find the coordinates. </p>
+
+<h3>
+<a id="1009---back-to-underworld" class="anchor" href="#1009---back-to-underworld" aria-hidden="true"><span class="octicon octicon-link"></span></a>1009 - Back to Underworld</h3>
+
+<p>I didn't use any normal graph algorithm for solving this problem. Even tough the problem uses a little concept of connected componenents. Try approaching the problem by considering the rivals as nodes in a graph. Check the code if you are stuck for a long time</p>
+
+<h3>
+<a id="1011---marriage-ceremonies" class="anchor" href="#1011---marriage-ceremonies" aria-hidden="true"><span class="octicon octicon-link"></span></a>1011 - Marriage Ceremonies</h3>
+
+<p>This is a normal Memoization with Bit masking type problem. Normal recursion without memoization causes a TLE. </p>
+
+<h3>
+<a id="1012---guilty-prince" class="anchor" href="#1012---guilty-prince" aria-hidden="true"><span class="octicon octicon-link"></span></a>1012 - Guilty Prince</h3>
+
+<p>This is one is a really simple graph problem. Keep marking the visited nodes to avoid visiting them again</p>
+
+<h3>
+<a id="1014---ifter-party" class="anchor" href="#1014---ifter-party" aria-hidden="true"><span class="octicon octicon-link"></span></a>1014 - Ifter Party</h3>
+
+<p>This is also a normal Ad-Hoc problem. The simplified task is to find the divisors of p - l which are greater than l.</p>
+
+<h3>
+<a id="1016---brush-ii" class="anchor" href="#1016---brush-ii" aria-hidden="true"><span class="octicon octicon-link"></span></a>1016 - Brush II</h3>
+
+<p>This is yet another adhoc problem. What you need to do is to ietrate over all the y points in ascending order in such a way that you increase the counter only when the difference of ym, ym+1, ....yn becomes greater than w. The counter would give you the answer. </p>
+
+<h3>
+<a id="1019---brush-iv" class="anchor" href="#1019---brush-iv" aria-hidden="true"><span class="octicon octicon-link"></span></a>1019 - Brush IV</h3>
+
+<p>This is a trivial application of Shortest Path algorithms. Implementing Floyd Warshal solution for this can accept the solution in a few lines of code</p>
+
+<h3>
+<a id="1020---a-childhood-game" class="anchor" href="#1020---a-childhood-game" aria-hidden="true"><span class="octicon octicon-link"></span></a>1020 - A Childhood game</h3>
+
+<p>This is a problem under Game theory. You can write the solution for this problem by just observing the pattern of win or loss. If Alice is taking the stone first she will get a win for 0, 2, 3, 5 .... and loss for 1, 4, 7 .... You can easily use this observation for solving the problem. </p>
+
+<h3>
+<a id="1022---circle-in-square" class="anchor" href="#1022---circle-in-square" aria-hidden="true"><span class="octicon octicon-link"></span></a>1022 - Circle in Square</h3>
+
+<p>The only tricky part in this question is to use double for all the calculations. Always use double instead of float in programming contests. </p>
+
+<h3>
+<a id="1023---discovering-permutations" class="anchor" href="#1023---discovering-permutations" aria-hidden="true"><span class="octicon octicon-link"></span></a>1023 - Discovering Permutations</h3>
+
+<p>This is a pretty simple questions. You can use the C++ <code>next_permutation</code> for cracking this problem in a few lines of code</p>
+
+<h3>
+<a id="1025" class="anchor" href="#1025" aria-hidden="true"><span class="octicon octicon-link"></span></a>1025</h3>
+
+<p>This is a dp problem</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/hackerkid/LightOJ-Solutions">LightOJ Solutions</a> is maintained by <a href="https://github.com/hackerkid">hackerkid</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
