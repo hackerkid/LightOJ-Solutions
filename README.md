@@ -80,13 +80,10 @@ T3 = 9 + E`
 
 Putting all that together, the original equation becomes:
 
-E = 3/3 + (6/3 + E/3) + (9/3 + E/3
-
-E = 6 + 2E/3
-
-E/3 = 6
-
-E = 18
+`E = 3/3 + (6/3 + E/3) + (9/3 + E/3`
+`E = 6 + 2E/3`
+`E/3 = 6`
+`E = 18`
 
 Now convert the logic into simple code
 
