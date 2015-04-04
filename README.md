@@ -81,8 +81,11 @@ T3 = 9 + E`
 Putting all that together, the original equation becomes:
 
 E = 3/3 + (6/3 + E/3) + (9/3 + E/3
+
 E = 6 + 2E/3
+
 E/3 = 6
+
 E = 18
 
 Now convert the logic into simple code
@@ -90,5 +93,7 @@ Now convert the logic into simple code
 
 ###1028 - Trailing Zeroes (I) 
 If a number can be expressed as p1 ^ c1 * p2 ^ c2 * ..... pn ^ cn where p1 .. pn are the prime factors and c1 ... cn are the powers of the factors, then the total number of divisors of the number is given by 
+
 `n = (c1 + 1) + (c2 + 1) + ... + (cn + 1)`
+
 Check the code carefully for the implementation
