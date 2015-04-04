@@ -55,10 +55,10 @@ The only tricky part in this question is to use double for all the calculations.
 ###1023 - Discovering Permutations
 This is a pretty simple questions. You can use the C++ `next_permutation` for cracking this problem in a few lines of code
 
-###1025
+###1025 - The Specials Menu
 This is a dp problem
 
-###1027
+###1027 - A Dangerous Maze 
 The below example have been taken from the forum
 
 Let's consider test case #3:
