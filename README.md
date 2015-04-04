@@ -57,3 +57,38 @@ This is a pretty simple questions. You can use the C++ `next_permutation` for cr
 
 ###1025
 This is a dp problem
+
+###1027
+The below example have been taken from the forum
+
+Let's consider test case #3:
+
+3
+3 -6 -9
+
+
+There are 3 doors, and we are to find the expected amount of time it will take to get out of the maze. Let's call that expected value E. Now, E has to be equal to the average of the times that it takes to get out from each door, correct? Let's say T1 is the amount of time to get out of the maze when taking door #1, and T2 and T3 are defined similarly. Then:
+
+`E = (T1 + T2 + T3) / 3`
+
+
+It's easy to see that T1 is 3, but what about T2 and T3? You can think about it like this: if you take door number 2, you will spend 6 minutes going through the maze, and you end up at the starting point, and from there, how much time will it take you to get out? Well, E is the expected time it will take you to get out from the start, right? So, you can say:
+
+`T2 = 6 + E
+T3 = 9 + E`
+
+
+Putting all that together, the original equation becomes:
+
+`E = 3/3 + (6/3 + E/3) + (9/3 + E/3)
+	E = 6 + 2E/3
+	E/3 = 6
+	E = 18`
+
+Now convert the logic into simple code
+
+
+###1028 - Trailing Zeroes (I) 
+If a number can be expressed as p1 ^ c1 * p2 ^ c2 * ..... pn ^ cn where p1 .. pn are the prime factors and c1 ... cn are the powers of the factors, then the total number of divisors of the number is given by 
+`n = (c1 + 1) + (c2 + 1) + ... + (cn + 1)`
+Check the code carefully for the implementation
