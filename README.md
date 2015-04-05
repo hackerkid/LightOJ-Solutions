@@ -94,3 +94,6 @@ If a number can be expressed as p1 ^ c1 * p2 ^ c2 * ..... pn ^ cn where p1 .. pn
 `n = (c1 + 1) + (c2 + 1) + ... + (cn + 1)`
 
 Check the code carefully for the implementation
+
+###1029 - Civil and Evil Engineer 
+This is a simple application of minimum spanning trees. Use a priority queue for reducing the time complexity.
