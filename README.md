@@ -97,3 +97,6 @@ Check the code carefully for the implementation
 
 ###1029 - Civil and Evil Engineer 
 This is a simple application of minimum spanning trees. Use a priority queue for reducing the time complexity.
+
+###1033 - Generating Palindromes
+Find the LCS of the given string and the reverse string. Then subtract the LCS from the actual length of the string. Find LCS using DP.  
