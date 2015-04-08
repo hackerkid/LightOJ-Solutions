@@ -100,3 +100,11 @@ This is a simple application of minimum spanning trees. Use a priority queue for
 
 ###1033 - Generating Palindromes
 Find the LCS of the given string and the reverse string. Then subtract the LCS from the actual length of the string. Find LCS using DP.  
+
+###1034 - Hit the Light Switches
+Use Kosaraju’s algorithm for finding the connected componenets of the directed Graph. In Kosaraju’s algorithm we perform the second DFS in the transpose graph. Skipping the creation of transpose graph result in the generation of cconnected componenents instead of the `SCC` which is exactly we want
+
+###1035 - Intelligent Factorial Factorization
+I don't think you would need any hint for soloving this question. Don't try to generate factorial to solve this question. 
+
+
