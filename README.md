@@ -107,4 +107,5 @@ Use Kosaraju’s algorithm for finding the connected componenets of the directed
 ###1035 - Intelligent Factorial Factorization
 I don't think you would need any hint for soloving this question. Don't try to generate factorial to solve this question. 
 
-
+###1037 - Agent 47
+This can be solved using bit masking. Write a recurise solution and save the states. 
