@@ -109,3 +109,9 @@ I don't think you would need any hint for soloving this question. Don't try to g
 
 ###1037 - Agent 47
 This can be solved using bit masking. Write a recurise solution and save the states. 
+
+###1040 - Donation
+Use Prims MST algorithm accordingly for solving this problem. 
+
+###1041 - Road Construction
+First you need to find the connected components of the graph. Then you need apply PRIMS MST in the connected components to find the minimum cost. 
