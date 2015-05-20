@@ -19,12 +19,7 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="solutions-for-light-oj" class="anchor" href="#solutions-for-light-oj" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solutions For Light OJ</h1>
-
-<p>Use the hints for solving the problem. See the solutions only in worst case situations. </p>
-
-<h3>
+      <h3>
 <a id="1002---country-roads" class="anchor" href="#1002---country-roads" aria-hidden="true"><span class="octicon octicon-link"></span></a>1002 - Country Roads</h3>
 
 <p>You need to use a modification of Dijkstra's algorithm for solving thr peorblem. They key catch is in Dijkstra we use </p>
@@ -108,9 +103,93 @@
 <p>This is a pretty simple questions. You can use the C++ <code>next_permutation</code> for cracking this problem in a few lines of code</p>
 
 <h3>
-<a id="1025" class="anchor" href="#1025" aria-hidden="true"><span class="octicon octicon-link"></span></a>1025</h3>
+<a id="1025---the-specials-menu" class="anchor" href="#1025---the-specials-menu" aria-hidden="true"><span class="octicon octicon-link"></span></a>1025 - The Specials Menu</h3>
 
 <p>This is a dp problem</p>
+
+<h3>
+<a id="1027---a-dangerous-maze" class="anchor" href="#1027---a-dangerous-maze" aria-hidden="true"><span class="octicon octicon-link"></span></a>1027 - A Dangerous Maze</h3>
+
+<p>The below example have been taken from the forum</p>
+
+<p>Let's consider test case #3:</p>
+
+<p>3
+3 -6 -9</p>
+
+<p>There are 3 doors, and we are to find the expected amount of time it will take to get out of the maze. Let's call that expected value E. Now, E has to be equal to the average of the times that it takes to get out from each door, correct? Let's say T1 is the amount of time to get out of the maze when taking door #1, and T2 and T3 are defined similarly. Then:</p>
+
+<p><code>E = (T1 + T2 + T3) / 3</code></p>
+
+<p>It's easy to see that T1 is 3, but what about T2 and T3? You can think about it like this: if you take door number 2, you will spend 6 minutes going through the maze, and you end up at the starting point, and from there, how much time will it take you to get out? Well, E is the expected time it will take you to get out from the start, right? So, you can say:</p>
+
+<p><code>T2 = 6 + E
+T3 = 9 + E</code></p>
+
+<p>Putting all that together, the original equation becomes:</p>
+
+<p><code>E = 3/3 + (6/3 + E/3) + (9/3 + E/3</code>
+<code>E = 6 + 2E/3</code>
+<code>E/3 = 6</code>
+<code>E = 18</code></p>
+
+<p>Now convert the logic into simple code</p>
+
+<h3>
+<a id="1028---trailing-zeroes-i" class="anchor" href="#1028---trailing-zeroes-i" aria-hidden="true"><span class="octicon octicon-link"></span></a>1028 - Trailing Zeroes (I)</h3>
+
+<p>If a number can be expressed as p1 ^ c1 * p2 ^ c2 * ..... pn ^ cn where p1 .. pn are the prime factors and c1 ... cn are the powers of the factors, then the total number of divisors of the number is given by </p>
+
+<p><code>n = (c1 + 1) * (c2 + 1) * ... * (cn + 1)</code></p>
+
+<p>Check the code carefully for the implementation</p>
+
+<h3>
+<a id="1029---civil-and-evil-engineer" class="anchor" href="#1029---civil-and-evil-engineer" aria-hidden="true"><span class="octicon octicon-link"></span></a>1029 - Civil and Evil Engineer</h3>
+
+<p>This is a simple application of minimum spanning trees. Use a priority queue for reducing the time complexity.</p>
+
+<h3>
+<a id="1033---generating-palindromes" class="anchor" href="#1033---generating-palindromes" aria-hidden="true"><span class="octicon octicon-link"></span></a>1033 - Generating Palindromes</h3>
+
+<p>Find the LCS of the given string and the reverse string. Then subtract the LCS from the actual length of the string. Find LCS using DP.  </p>
+
+<h3>
+<a id="1034---hit-the-light-switches" class="anchor" href="#1034---hit-the-light-switches" aria-hidden="true"><span class="octicon octicon-link"></span></a>1034 - Hit the Light Switches</h3>
+
+<p>Use Kosaraju’s algorithm for finding the connected componenets of the directed Graph. In Kosaraju’s algorithm we perform the second DFS in the transpose graph. Skipping the creation of transpose graph result in the generation of cconnected componenents instead of the <code>SCC</code> which is exactly we want</p>
+
+<h3>
+<a id="1035---intelligent-factorial-factorization" class="anchor" href="#1035---intelligent-factorial-factorization" aria-hidden="true"><span class="octicon octicon-link"></span></a>1035 - Intelligent Factorial Factorization</h3>
+
+<p>I don't think you would need any hint for soloving this question. Don't try to generate factorial to solve this question. </p>
+
+<h3>
+<a id="1037---agent-47" class="anchor" href="#1037---agent-47" aria-hidden="true"><span class="octicon octicon-link"></span></a>1037 - Agent 47</h3>
+
+<p>This can be solved using bit masking. Write a recurise solution and save the states. </p>
+
+<h3>
+<a id="1040---donation" class="anchor" href="#1040---donation" aria-hidden="true"><span class="octicon octicon-link"></span></a>1040 - Donation</h3>
+
+<p>Use Prims MST algorithm accordingly for solving this problem. </p>
+
+<h3>
+<a id="1041---road-construction" class="anchor" href="#1041---road-construction" aria-hidden="true"><span class="octicon octicon-link"></span></a>1041 - Road Construction</h3>
+
+<p>First you need to find the connected components of the graph. Then you need apply PRIMS MST in the connected components to find the minimum cost. </p>
+
+<h3>
+<a id="1042---secret-origins" class="anchor" href="#1042---secret-origins" aria-hidden="true"><span class="octicon octicon-link"></span></a>1042 - Secret Origins</h3>
+
+<p>This is an adhoc problem. Don't bruteforce. See how the bits changes from input to output answer. </p>
+
+<h3>
+<a id="1045---digits-of-a--factorial" class="anchor" href="#1045---digits-of-a--factorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>1045 - Digits Of A  Factorial</h3>
+
+<p>You can find the number of digits required ny taking log of the factorial. This is equalent to 
+<code>log(N!) = log(1) + log(2) + .... + log(N)</code>
+Precompute and store the values to avoid doing repetetive tasks. </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/hackerkid/LightOJ-Solutions">LightOJ Solutions</a> is maintained by <a href="https://github.com/hackerkid">hackerkid</a>.</span>
