@@ -119,7 +119,12 @@ First you need to find the connected components of the graph. Then you need appl
 ###1042 - Secret Origins
 This is an adhoc problem. Don't bruteforce. See how the bits changes from input to output answer. 
 
+###1044 - Paliandrome Partitioning
+This is a DP problem. you need to solve 2 seperate tasks for solving the problem. First task is to precompute the indexes of all the palidrome substrings. The second task is to solve the problem using the pre computed value with (1) lookup time. 
+
+
 ###1045 - Digits Of A  Factorial
 You can find the number of digits required ny taking log of the factorial. This is equalent to 
 `log(N!) = log(1) + log(2) + .... + log(N)`
 Precompute and store the values to avoid doing repetetive tasks. 
+
