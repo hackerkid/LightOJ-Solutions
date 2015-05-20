@@ -115,3 +115,11 @@ Use Prims MST algorithm accordingly for solving this problem.
 
 ###1041 - Road Construction
 First you need to find the connected components of the graph. Then you need apply PRIMS MST in the connected components to find the minimum cost. 
+
+###1042 - Secret Origins
+This is an adhoc problem. Don't bruteforce. See how the bits changes from input to output answer. 
+
+###1045 - Digits Of A  Factorial
+You can find the number of digits required ny taking log of the factorial. This is equalent to 
+`log(N!) = log(1) + log(2) + .... + log(N)`
+Precompute and store the values to avoid doing repetetive tasks. 
