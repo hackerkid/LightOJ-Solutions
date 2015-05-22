@@ -128,3 +128,6 @@ You can find the number of digits required ny taking log of the factorial. This 
 `log(N!) = log(1) + log(2) + .... + log(N)`
 Precompute and store the values to avoid doing repetetive tasks. 
 
+
+###0146 - Rider
+Use BFS for solving this problem. You need to find the shortest distance from each rider to all the cells in the chess board using BFS. Then use a simple loop for choosing the best cell. 
