@@ -135,3 +135,6 @@ Use BFS for solving this problem. You need to find the shortest distance from ea
 ###1047 - Neighbour House
 Normal DP problem. Try solving it yourself. 
 
+
+###1049 - One Way Roads
+This is a normal ad hoc problem. You can solve this by trying the two possible way of road arrangements, one being mere the compliment of the other. 
