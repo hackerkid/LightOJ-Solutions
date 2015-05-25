@@ -138,3 +138,6 @@ Normal DP problem. Try solving it yourself.
 
 ###1049 - One Way Roads
 This is a normal ad hoc problem. You can solve this by trying the two possible way of road arrangements, one being mere the compliment of the other. 
+
+###1051 - Good Or Bad
+DP problem. I solved it by using memoization and considering only characters of the string from the point you are evaulating to save the state for memoization. I used only 5 characters because they only decide the outcome of the that point. 
