@@ -143,6 +143,10 @@ This is a normal ad hoc problem. You can solve this by trying the two possible w
 DP problem. I solved it by using memoization and considering only characters of the string from the point you are evaulating to save the state for memoization. I used only 5 characters because they only decide the outcome of the that point. 
 
 ###1053 - Higher Math
-If the triangle is right angle a*a + b*b == c*c
+If the triangle is right angle `a * a + b * b == c * c`
 
+###1093 - Ghakjini
+Use two priority queues. One for tracking maximum element in memeory and one for tracking minimum element. 
 
+###1094 - Farthest Node In Tree
+Do to DFS. First one would return one node. The seond one from that node will get return you the other
