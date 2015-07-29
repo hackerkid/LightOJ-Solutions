@@ -1,113 +1,87 @@
-#include <bits/stdc++.h>
-#define ll unsigned long long
-#define MAX 100100
-
+#include <iostream>
+#include <vector>
+#include <stdio.h>
+#define N 5000000
+#include <string.h>
 using namespace std;
+unsigned long long ans[N+5];
+bool isprime[N+5];
 
-int size = 5*1e6+10;
-
-ll dp[5000010];
-
-int prime[5000010];
-
-
-ll euler(ll k)
+int prime()
 {
-	ll prod = k;
-	ll den = 1;
-	ll cnt  =0;
-   for(int i = 2;i *i <= k;i++){
+	memset(isprime, 1, sizeof(isprime));
 
-   		if( k % i ==0){
-   			ll loc = i -1;
-   			prod = prod*loc;
-   			den = den*i;
-   			cnt++;
-   		}
-   			while( k % i == 0){
-   				k = k/i;
-   			} 
+	for(int i = 2; i <= N; i++) {
+		if(isprime[i] == 1) {
+			for (int j = i + i; j <= N; j = j + i) {
+				isprime[j] = 0;
+			}
 
-   }
-
-   if( k > 1)
-   {
-   	prod *= k-1;
-   	den *= k;
-   }
-
-   	return prod/den;
-
-}
-
-ll sieve()
-{
-
-	ll i,j,k,m,n;
-
-	for(i = 2; i <= 5000005;i++){
-		if(prime[i] == 0){
-			for(j =i*i; j < 5000005;j += i)
-			{		
-					if(prime[j] == 0)	
-					prime[j] = i;
-			}	
 		}
 
 	}
 
 
-
 }
 
-ll pregenerate()
+
+int  main()
 {
 
-	dp[1] = 1;
+	vector <int> x;
+	ans[0] = 0;
+	ans[1] = 0;
+
+	int count = 0;
+	unsigned long long a;
+	unsigned long long b;
+	unsigned long long temp;
+	unsigned long long pr;
+	unsigned long long t;
+	unsigned long long j;
+	unsigned long long div;
+	prime();
+	for (int i = 2; i <= N; i++) {
+		if(isprime[i]) {
+			x.push_back(i);
+		}
+
+	}
 	
-	dp[2]  = 1;
+	for (int i = 0; i <= N; i++) {
+		ans[i] = i;
+	}
+	for (int i = 0; i < x.size(); i++) {
+		pr = x[i];
+		div = 1;
+		for (int j = pr; j <= N; j = j + pr) {
+			ans[j] =(((ans[j] *  (pr - 1)))/ pr);
+		}
 
 
-	sieve();
-
-	for(int i= 3;i < (5*1e6) + 2;i++){
-
-		if(prime[i] == 0)
-			dp[i] = i-1;
-		else {
-
-			ll k=	prime[i];
-	
-		if( i/k % k == 0 )
-			dp[i] = dp[i/k]*(k);
-		else 
-			dp[i] = dp[i/k]*(k-1);
 		
-		}
 
-	
 	}
 
-
-	for(int i = 2; i <= size;i++ ){
-		dp[i] = dp[i]*dp[i] + dp[i-1];
+	for (int i = 1; i <= N; i++) {
+			ans[i] = ans[i] * ans[i];
+			ans[i] += ans[i-1];
 	}
+	cin >> t;
 
+	for (int i =1 ; i <= t; i++) {
+		scanf("%lld", &a);
+		scanf("%lld", &b);
+		temp = ans[b] - ans[a-1];
+		printf("Case %d: %llu\n",i, temp); 
+	}
 
 }
 
-int main()
-{
-	#ifndef ONLINE_JUDGE
-	freopen("/home/sameer/sameer/sam.sam","r",stdin);
-	#endif
+				
 
 
-	
-	ll i,j,k,n,m,t,cont;
-	
-	
-	scanf("%lld",&t);
+&t);
 	ll cases = t;
 
 	pregenerate();
