@@ -19,11 +19,11 @@ int main()
 		}
 
 		if(count % 2) {
-			printf("case %d: odd\n", cs);
+			printf("Case %d: odd\n", cs);
 		}
 
 		else {
-			printf("case %d: even\n", cs);
+			printf("Case %d: even\n", cs);
 
 		}
 
