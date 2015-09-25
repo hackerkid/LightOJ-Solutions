@@ -1,8 +1,4 @@
-/*
-PROG: fence
-ID: bornawe1
-LANG: C++
-*/
+//The great chinese postman problem
 #include <queue>
 #include <vector>
 #include <stdlib.h>
@@ -118,8 +114,8 @@ int travel(int cs)
 	ans = 0;	
 	bit = 0;
 
-	cin >> n;
-	cin >> m;
+	cin >> n; //no of joints
+	cin >> m; // no of streets
 
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j <= n; j++) {
@@ -130,9 +126,9 @@ int travel(int cs)
 	for (int i = 0; i < m; i++) {
 		
 		
-		cin >> x;
-		cin >> y;
-		cin >> w;
+		cin >> x; // street starting point
+		cin >> y; // street ending point
+		cin >> w; // street length
 
 		ans += w;
 		
@@ -147,16 +143,16 @@ int travel(int cs)
 
 	
 
-	floyd_warshal();
+	floyd_warshal(); // calculate the shortest path between all the joints
 	
 	
 	for (int i = 1; i <= n; i++) {
 		if(edge_count[i] % 2 == 1) {
-			bit = set(bit, i);
+			bit = set(bit, i); // mark joints with odd degree
 		}
 
 	}
-	 ans += chinese(bit);
+	 ans += chinese(bit); // try all combination of odd vertices and choose the combination with minimum distance
 
 
 	 printf("Case %d: %d\n", cs, ans);
@@ -169,7 +165,7 @@ int main()
 
 	int t;
 
-	cin >> t;
+	cin >> t; // no of test cases
 
 	for (int cs = 1; cs <= t; cs++) {
 		travel(cs);
