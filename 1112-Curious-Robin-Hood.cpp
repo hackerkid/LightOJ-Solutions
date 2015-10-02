@@ -5,14 +5,13 @@
 
 using namespace std;
 int a[SIZE];
-int inp[SIZE];
 int n;
 
 
 long long update(int i, int val)
 {
 
-	while(i < n) {
+	while(i <= n) {
 		a[i] = a[i] + val;
 		i = i + (i & (-i));
 	}
@@ -39,7 +38,7 @@ int main()
 	int y;
 	int w;
 	int choice;
-	int ans;
+	long long ans;
 	int q;
 	int ch;
 
@@ -50,12 +49,13 @@ int main()
 		scanf("%d", &q);
 		
 		memset(a, 0, sizeof a);
-		memset(inp, 0, sizeof inp);
 
 		for (int i = 1; i <= n; i++) {
-			scanf("%d", &inp[i]);
-			update(i, inp[i]);
+			scanf("%d", &x);
+			update(i, x);
 		}
+
+
 
 		printf("Case %d:\n", cs);
 		for (int i = 0; i < q; i++) {
@@ -65,16 +65,15 @@ int main()
 				case 1:
 					scanf("%d", &x);
 					x++;
-					update(x, -inp[x]);
-					printf("%d\n", inp[x]);
-					inp[x] = 0;
+					ans = query(x) - query(x-1);
+					update(x, -ans);
+					printf("%lld\n", ans);
 					break;
 				case 2:
 					scanf("%d", &x);
 					x++;
 					scanf("%d", &w);
 					update(x, w);
-					inp[x] += w;
 					break;
 
 				case 3:
@@ -83,7 +82,7 @@ int main()
 					x++;
 					y++;
 					ans = query(y) - query(x -1);
-					printf("%d\n", ans);
+					printf("%lld\n", ans);
 					break;
 
 			}
