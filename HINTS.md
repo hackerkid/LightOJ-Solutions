@@ -169,3 +169,7 @@ Use two priority queues. One for tracking maximum element in memeory and one for
 
 ###1094 - Farthest Node In Tree
 Do to DFS. First one would return one node. The seond one from that node will get return you the other
+
+
+###1326 - Race
+Assume that there are N number of ways for finishing in M places. How can you find the number of ways to finish M+1 places?
