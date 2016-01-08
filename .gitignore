@@ -1,2 +1,7 @@
-a.out
+#binary files
+
+*.out
+
+#input files
+
 *.in
