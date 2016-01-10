@@ -5,3 +5,7 @@
 #input files
 
 *.in
+
+#test files
+
+test*
