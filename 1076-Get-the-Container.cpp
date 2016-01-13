@@ -53,15 +53,13 @@ int main()
 					i++;
 				}
 				else {
-					j++;
 					bb = 0;
 				}
 
 			}
 		}
 
-
-		printf("Case %d: %d\n", cs, maxi);
+		printf("Case %d: %lld\n", cs, maxi);
 
 	}
 
