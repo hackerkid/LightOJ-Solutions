@@ -1,4 +1,4 @@
-#Solutions For Light OJ
+#LightOJ Solutions
 
 > LightOJ Solutions with Hints in C++
 
