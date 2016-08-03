@@ -18,7 +18,6 @@ int wow(string x)
 	int t;
 	int k;
 	string temp;
-
 	t = hash[x];
 	visi[t] = gray;
 	for (unsigned int i = 0; i < a[t].size(); i++) {
@@ -26,24 +25,12 @@ int wow(string x)
 		if(visi[hash[temp]] == gray) {
 			ok = 0;
 			return 0;
-		}
-
-		else {
+		} else {
 			wow(temp);
-			
 		}
-
 	}
-
 	visi[t] = black;
-
-
-
 }
-		
-		
-
-
 int main()
 {
 
@@ -54,24 +41,20 @@ int main()
 	int c;
 	c = 1;
 	tot = 0;
-	//fstream cin;
-	//cin.open("1003.in", ios::in);
 	string x;
 	string y;
 	cin >> t;
 	for (int i = 1; i <= t; i++) {
 		cin >> m;
 		vector <string> backup;
-		
 		vector < vector <string> > aa(10005);
 		map <string, int> has;
 
 		swap(aa, a);
 		swap(has, hash);
-		
-
 		count = -1;
 		ok = 1;
+		
 		for (int j = 0; j < m; j++) {
 			cin >> x;
 			cin >> y;
@@ -81,10 +64,7 @@ int main()
 				hash[x] = count;
 				backup.push_back(x);
 				tot++;
-			}
-
-			else {
-				
+			} else {
 				count = hash[x];
 			}
 			
@@ -94,7 +74,6 @@ int main()
 				if(a[count][g] == y) {
 					yes = 0;
 				}
-
 			}
 			if(yes) {
 				a[count].push_back(y);
@@ -122,16 +101,11 @@ int main()
 			}
 		}
 
-		
 		if(ok) {
 			cout << "Case "<<i<<": Yes\n";
-		}
-
-		else {
+		} else {
 			cout << "Case "<<i<<": No\n";
 		}
-
-
 	}
 
 
