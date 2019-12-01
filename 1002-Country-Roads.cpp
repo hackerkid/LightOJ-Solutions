@@ -1,9 +1,4 @@
-#include <iostream>
-#include <queue>
-#include <vector>
-#include <utility>
-#include <limits.h>
-#include <fstream>
+#include<bits/stdc++.h>
 #define ii pair<int, int>
 using namespace std;
 
