@@ -2,11 +2,10 @@
 
 > LightOJ Solutions with Hints in C++
 
-<br>
-<h1  align="center">
+<h2  align="center">
   🔥🔥
   Check out my latest project - <a href="https://bit.ly/3lHYbWO">diff.blog</a>
-</h1>
+</h2>
 <br>
 
 ## Guidelines
