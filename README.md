@@ -4,7 +4,7 @@
 
 <h2  align="center">
   🔥🔥
-  Check out my latest project - <a href="https://bit.ly/3lHYbWO">diff.blog</a>
+  Check out my latest project - <a href="http://bit.ly/diff-lightoj">diff.blog</a>
 </h2>
 <br>
 
