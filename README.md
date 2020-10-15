@@ -2,6 +2,13 @@
 
 > LightOJ Solutions with Hints in C++
 
+<br>
+<h1  align="center">
+  🔥🔥
+  Check out my latest project - <a href="https://bit.ly/3lHYbWO">diff.blog</a>
+</h1>
+<br>
+
 ## Guidelines
 
 * Use the [hints](HINTS.md) for solving the problems. 
