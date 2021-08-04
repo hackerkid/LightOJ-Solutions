@@ -1,6 +1,6 @@
 # LightOJ Solutions
 
-> LightOJ Solutions with Hints in C++
+[LightOJ](https://lightoj.com/) Solutions with Hints in C++.
 
 <h2  align="center">
   🔥🔥
@@ -11,13 +11,8 @@
 ## Guidelines
 
 ## HINTS
-Hints to a bunch of selcted problems are listed below.
 
-If the [hints](HINTS.md) are not present for a problem, refer to the LightOJ forum. 
-
-# Hints
-
-Hints to selected problems of LightOJ. Feel free to add or update the hints by sending a pull a request. 
+Hints to selected problems of LightOJ. Feel free to add or update the hints by sending a pull a request. If the [hints](HINTS.md) are not present for a problem, refer to the LightOJ forum. 
 
 ### 1002 - Country Roads
 You need to use a modification of Dijkstra's algorithm for solving thr peorblem. They key catch is in Dijkstra we use 
